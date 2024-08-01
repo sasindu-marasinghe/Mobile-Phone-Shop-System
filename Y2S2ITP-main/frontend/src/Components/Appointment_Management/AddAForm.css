@@ -1,0 +1,48 @@
+.container {
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 500px; /* Set maximum width of the container */
+ /*background-color: #007bff;
+  /* Set background color to blue */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  color: #fff; /* Set text color to white */
+}
+
+.container {
+  background-color: #007bff; /* Set background color to blue */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+  
+  label {
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%; /* Make text inputs and textareas fill their container */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  button[type="submit"] {
+    width: 100%; /* Make button fill its container */
+    padding: 10px; /* Adjust padding as needed */
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px; /* Add margin to the bottom */
+    border: none; /* Remove border */
+     /* Set background color to black */
+     /* Set text color to white */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+ 

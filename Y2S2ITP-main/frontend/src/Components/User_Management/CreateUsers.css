@@ -1,0 +1,276 @@
+.create-users-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Light gray background color */
+    height: 100vh;
+}
+
+.create-users-form {
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for the form */
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 4px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 4px;
+    color: #fff; /* White text color */
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.btn-block {
+    display: block;
+}
+
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px; /* Add margin between the image and the form */
+  }
+  
+  .form-container {
+    flex: 2;
+  }
+  
+  /* Style for the image */
+  .image-container img {
+    width: 200px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+  }
+  .upload-btn {
+    width: auto; /* Set the width to auto to fit the content */
+    padding: 5px 10px; /* Adjust padding as needed */
+  }
+ 
+/* Additional styles for the form header */
+.form-header {
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  font-size: 24px; /* Increase font size */
+}
+
+/* Styles for form labels */
+.form-label {
+  font-weight: bold; /* Make the labels bold */
+}
+
+/* Style for the error message */
+.error-message {
+  color: red; /* Set text color to red */
+  margin-top: 10px; /* Add margin at the top */
+}
+
+/* Style for the upload new image button */
+.upload-btn {
+  margin-top: 10px; /* Add margin at the top */
+  background-color: #28a745; /* Green color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  padding: 8px 16px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.upload-btn:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+/* Additional styles for the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for individual form fields */
+.input-container {
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Style for form inputs */
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style for submit button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff; /* Primary blue color */
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* White text color */
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Styles for error messages */
+.error-message {
+  color: red; /* Red color for error messages */
+  font-size: 14px; /* Font size for error messages */
+  margin-top: 5px; /* Add margin at the top */
+}
+
+/* Styles for success messages */
+.success-message {
+  color: green; /* Green color for success messages */
+  font-size: 14px; /* Font size for success messages */
+  margin-top: 5px; /* Add margin at the top */
+}
+.upload-remove-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.upload-btn, .btn-danger {
+    margin-left: 10px; /* Adjust margin between the buttons */
+}
+/* Apply responsive styles */
+@media (max-width: 768px) {
+  /* Reduce margin between image and form on smaller screens */
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust width of the image on smaller screens */
+  .image-container img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust width of the image on even smaller screens */
+  .image-container img {
+    width: 120px;
+  }
+}
+/* Apply responsive styles */
+@media (max-width: 576px) {
+  /* Reduce margin between image and form on smaller screens */
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust width of the image on smaller screens */
+  .image-container img {
+    width: 100px; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust styling for form inputs on smaller screens */
+  .form-control {
+    font-size: 14px; /* Reduce font size of form inputs */
+  }
+
+  /* Adjust styling for buttons on smaller screens */
+  .upload-btn,
+  .btn-danger {
+    font-size: 12px; /* Reduce font size of buttons */
+    padding: 6px 12px; /* Adjust padding of buttons */
+  }
+}
+/* Apply responsive styles */
+@media (max-width: 480px) {
+  /* Adjust width of the image on very small screens */
+  .image-container img {
+    width: 80px; /* Further reduce width of the image */
+  }
+
+  /* Adjust font size of form inputs and buttons on very small screens */
+  .form-control,
+  .upload-btn,
+  .btn-danger {
+    font-size: 10px; /* Reduce font size even more */
+    padding: 4px 8px; /* Further adjust padding of buttons */
+  }
+}
+
+.create-users-form {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Subtle gradient background */
+}
+.create-users-form {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Subtle gradient background */
+  border-radius: 12px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the form */
+}
+
+.create-users-form {
+  border-radius: 12px; /* Rounded corners for the form */
+}
+.btn-primary,
+.upload-btn,
+.btn-danger {
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.btn-primary:hover,
+.upload-btn:hover,
+.btn-danger:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+.form-control:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add box shadow on focus */
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 6px; /* Add margin below form labels */
+}
+
+.form-control,
+.upload-btn,
+.btn-danger {
+  margin-bottom: 12px; /* Add margin below form inputs and buttons */
+}
+
+.create-users-form {
+  background-color: #f8f9fa; /* Light gray background color */
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 12px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1); /* Outer and inner shadows */
+}
+
+/* Add hover effect for interactive feel */
+.create-users-form:hover {
+  transform: translateY(-2px); /* Move the form slightly up on hover */
+}

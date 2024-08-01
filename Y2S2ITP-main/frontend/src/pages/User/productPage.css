@@ -1,0 +1,139 @@
+.maint {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 10px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.product-image {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  overflow: hidden; 
+  cursor: pointer;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s; 
+}
+
+.product-image:hover img {
+  transform: scale(1.2); 
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(43, 43, 43);
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 16px;
+  z-index: 1;
+  background-color: #c2bebe4a;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.product-details {
+  width: 45%;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.product-details h1 {
+  font-size: 26px;
+  margin-top: 0;
+  font-weight: bold;
+  color: black;
+}
+
+.product-details h2 {
+  font-size: 23px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(32, 51, 255);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  color: #5c5c5c;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.product-details strong {
+  display: block;
+  margin-top: 20px;
+  color: rgb(23, 22, 22);
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.button-section {
+  margin-top: 20px;
+}
+
+.quantity-selector button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #2a2a2a;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.quantity-selector button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.add-to-cart, .order-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #388bff;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.order-button {
+  background-color: #388bff;
+  color: #ffffff;
+  border: none;
+}
+
+.add-to-cart:disabled, .order-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

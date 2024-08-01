@@ -1,0 +1,411 @@
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-row {
+  background-color: #b0b0b0; /* Darker background for header row */
+  font-weight: bold;
+}
+
+.expense-table th, .expense-table td {
+  padding: 8px 12px;
+  border: 1px solid #999; /* Slightly darker border for each cell */
+  text-align: center; 
+}
+
+.update-button, .delete-button {
+  width: calc(100% - 2px); /* Button size equals the border */
+  padding: 8px 12px; /* Adjust padding to match the cell */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+ 
+}
+
+.update-button:hover, .delete-button:hover {
+  background-color: lightgray; 
+}
+
+.update-button {
+  background-color: #1db418; 
+  margin-bottom: 5px; 
+}
+
+.delete-button {
+  background-color:#dc3545;
+}
+
+.welcomemsg {
+  margin-top: 50px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.new-rec-button {
+  margin-top: 40px;
+ 
+}
+
+.new-rec-button button {
+  padding: 20px 40px; 
+  background-color: gray; 
+  border: none;
+  font-size: large;
+  margin-right: 10px;
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.new-rec-button button:hover {
+  background-color: darkgray; 
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+/* FinanceCSS/DisplayDatabase.css */
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%; /* Adjust as needed */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 3);
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 97%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: 'Your-Modern-Font', sans-serif;
+}
+
+.button-group-update {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group-update button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #1db418;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.submit-button-update,
+.cancel-button-update {
+  padding: 10px 20px;
+  background-color: #007bff; /* Change to your desired color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button-update:hover,
+.cancel-button-update:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+
+.popup-del-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 999; /* below popup */
+}
+
+
+.popup-del {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000; /* above overlay */
+}
+
+/*Report Section CSS */
+.reports-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #b9b7b7;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.514);
+  max-width: 600px; /* Set maximum width */
+  margin-left: auto; /* Center the section */
+  margin-right: auto;
+}
+
+.reports-section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.reports-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #33333357;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333c2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.514);
+}
+
+.custom-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.custom-dates label {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.custom-dates input[type="date"] {
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  font-weight: bold;
+}
+
+.generate-report-button-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+}
+
+.generate-report-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 3%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-report-button:hover {
+  background-color: #0056b3;
+}
+
+.loading-circle {
+  display: inline-block;
+  margin-left: 8px;
+  border: 4px solid #f3f3f3;
+  margin-bottom: -5px;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*search option*/
+
+
+.search-section {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.514);
+  max-width: 25%;
+  margin-left: auto;
+  margin-top: -55px;
+ ;
+}
+
+.search-results {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.search-results h2 {
+  margin-bottom: 10px;
+}
+
+.search-results-container {
+  position: relative;
+}
+
+.close-button-container {
+  position: absolute;
+  bottom: -40px;  /* Adjusted to move the button lower */
+  right: 3px;
+}
+
+.close-button {
+  
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;  /* Hover transition */
+}
+
+.close-button:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 8px 10px;
+  outline: none;
+  width: 100%;
+  
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-section-salary {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.514);
+  max-width: 25%;
+  margin-left: auto;
+  margin-top: -55px;
+  
+ ;
+}
+
+.home-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*CSS FOR TEMPORY INDICATIONS */
+
+.para-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  z-index: 1000;
+  text-align: center; /* Align the text in the center */
+}
+
+.loading-bar {
+  width: 1000px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  background-color: #ccc; /* Color of the loading bar */
+  margin-top: 20px; /* Spacing between text and loading bar */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Loading animation */
+.loading-bar::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: #007bff; /* Color of the loading progress */
+  border-radius: 10px; /* Rounded corners */
+  animation: loading 3s infinite; /* Animation duration */
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+

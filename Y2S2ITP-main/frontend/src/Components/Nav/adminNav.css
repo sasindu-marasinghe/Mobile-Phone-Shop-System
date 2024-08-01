@@ -1,0 +1,130 @@
+.admin-header {
+  background-color: #0f1829;
+  color: #f0f0f0;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500; 
+}
+
+.admin-header .logo a {
+  text-decoration: none;
+  color: #ecececf6;
+  font-size: 1.5rem;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.admin-header .profile {
+  display: flex;
+  align-items: center;
+}
+
+.admin-header .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.admin-header .profile span {
+  margin-right: 10px;
+}
+
+.admin-header .dropdown {
+  position: relative;
+}
+
+.admin-header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  right: 0;
+  z-index: 1;
+}
+
+.admin-header .dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.admin-header .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.admin-header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.admin-header .dropbtn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.sidebar {
+  background-color: #0f1829;
+  color: #fff;
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 200;
+  padding-top: 50px;
+  border-radius: 0px 0px 15px 0px;
+  box-shadow: #0f1829;
+  padding-left: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  color: #3e45fe;
+}
+
+.sidebar ul li.active a {
+  color: #3e45fe;
+}
+
+.sidebar {
+  /* your existing styles */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.burger-menu {
+  font-size: 3vh;
+}

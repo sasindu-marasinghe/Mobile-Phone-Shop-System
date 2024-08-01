@@ -1,0 +1,26 @@
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin: 25px;
+}
+
+
+/* catogery */
+.ListCategory {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 100px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+
+
+
+div a{
+  text-decoration: none;
+}
+

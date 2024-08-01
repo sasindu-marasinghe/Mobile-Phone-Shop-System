@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  .nav-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+    font-weight: 500; 
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    background-color: #a9a9a9; /* dark gray */
+    border-radius: 5px;
+  }
+  
+  
